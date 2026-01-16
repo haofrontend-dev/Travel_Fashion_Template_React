@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuLịchStyle - Thời Trang & Du Lịch Affiliate</title>
+    <!-- Added typography plugin for editorial content -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": {
+                            DEFAULT: "#a6dd9d",
+                            dark: "#8bc482",
+                            light: "#c8e9c1",
+                        },
+                        "secondary-green": "#dee791",
+                        "accent": {
+                            yellow: "#fff9bd",
+                            peach: "#ffd6ba",
+                            cream: "#fdfaf0",
+                        },
+                        "background": {
+                            light: "#faf8f5",
+                            dark: "#121811",
+                            muted: "#f0f4ef",
+                        },
+                        "text": {
+                            main: "#121811",
+                            muted: "#63895d",
+                            sub: "#8da889",
+                        },
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                        '5xl': '3rem',
+                        '6xl': '4rem',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -10px rgba(0, 0, 0, 0.05)',
+                        'xl-primary': '0 20px 25px -5px rgba(166, 221, 157, 0.2), 0 10px 10px -5px rgba(166, 221, 157, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #faf8f5; 
+            color: #121811; 
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #a6dd9d 0%, #dee791 50%, #ffd6ba 100%);
+        }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Custom Typography Smoothing for Articles */
+        .prose h1, .prose h2, .prose h3 {
+            letter-spacing: -0.02em;
+            color: #121811;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+  }
+}
+</script>
+</head>
+<body class="bg-background-light text-text-main selection:bg-primary/30">
+    <div id="root"></div>
+</body>
+</html>
