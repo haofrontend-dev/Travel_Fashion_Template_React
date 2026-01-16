@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# DuLịchStyle - Travel & Fashion Affiliate Template
 
-# Run and deploy your AI Studio app
+![DuLịchStyle Hero Banner](https://lh3.googleusercontent.com/aida-public/AB6AXuCWGZ5FsQZS8i73UGUet5pnYASZAgRqCIjCbOeKk9DIH_qCcqtSZGgwpU-0b-5Nvp1peBFbbDZNHmUJlBqUu80WNx88q8kLKjTJAWI5B8t7E3gRCxmCIAVocq86YqbzpyZhEyhkHZdbGZIS0Za-SHQv5TmZB03NfXXZqHJgAB4iAInHQqpCWcKFAK3LT2w92rFm6xzDLGyN0XK0_ItWZOaRYxqhlUxZUcZP9Dmne26CiU1HEsrDKdvaiGt0aSd4lNdVfieC18NIJbM3)
 
-This contains everything you need to run your app locally.
+DuLịchStyle is a high-end, WordPress-inspired web application designed for travel and fashion affiliate marketing. It combines editorial travel guides with product recommendations, integrated vouchers, and destination discovery.
 
-View your app in AI Studio: https://ai.studio/apps/drive/12Z5xr8-9HuxD81uMlA4q4Pr4QXmfHnNZ
+## ✨ Key Features
 
-## Run Locally
+- **Editorial Handbook**: A magazine-style blog for travel tips, fashion advice, and reviews with beautiful typography and layout.
+- **Destinations Hub**: An immersive destination discovery page featuring a "Bento Grid" layout and vibe-based filtering (Beach, Mountain, City, Luxury).
+- **Affiliate Integration**: Built-in support for Shopee, Lazada, Klook, and Traveloka affiliate links.
+- **Voucher System**: A dedicated page for "Ticket-style" discount codes with category and platform filtering.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+- **WordPress Admin Bar Simulation**: Includes a mock WordPress admin bar and UX Builder links to simulate a real CMS experience.
 
-**Prerequisites:**  Node.js
+## 🛠️ Technical Stack
 
+- **React 19**: Modern UI development.
+- **Tailwind CSS**: Utility-first styling with custom theme configurations.
+- **React Router 7**: Client-side routing.
+- **Google Material Symbols**: For consistent and clean iconography.
+- **Plus Jakarta Sans**: Modern and readable typography.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📂 Project Structure
+
+- `/components`: Reusable UI elements like `Navbar`, `Footer`, `ProductCard`, and `WordPressAdminBar`.
+- `/pages`: Main application views including `HomePage`, `HandbookPage`, `DestinationsPage`, and more.
+- `/constants.tsx`: Mock data for products, articles, vouchers, and destinations.
+- `/types.ts`: TypeScript interfaces for data consistency.
+
+## 🚀 Getting Started
+
+This project is designed to run in a browser environment using ES modules.
+
+1. Open `index.html` in a local server or browser.
+2. The application automatically imports `index.tsx` which mounts the React app.
+
+## 🎨 Theme Configuration
+
+The project uses a custom Tailwind theme defined in `index.html`:
+- **Primary Color**: `#a6dd9d` (Soft Green)
+- **Background**: `#faf8f5` (Warm White)
+- **Typography**: Plus Jakarta Sans
+
+---
+*Created with passion for travel and style.*
